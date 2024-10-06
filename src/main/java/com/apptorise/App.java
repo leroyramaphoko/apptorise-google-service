@@ -1,4 +1,4 @@
-package com.apptorise.google;
+package com.apptorise;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
