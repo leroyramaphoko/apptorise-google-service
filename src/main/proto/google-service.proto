@@ -1,0 +1,27 @@
+syntax="proto3";
+
+option java_multiple_files = true;
+option java_package = "com.apptorise.google";
+
+message GoogleIdTokenRequest {
+  string idToken = 1;
+}
+
+message GoogleAccessTokenRequest {
+  string accessToken = 1;
+}
+
+message GoogleUser {
+  string name = 1;
+  string surname = 2;
+  string email = 3;
+  string photo = 4;
+  string sub = 5;
+  string locale = 6;
+  bool emailVerified = 7;
+}
+
+service GoogleService {
+    rpc GetUserByIdToken(GoogleIdTokenRequest) returns (GoogleUser) {};
+	  rpc GetUserByAccessToken(GoogleAccessTokenRequest) returns (GoogleUser) {};
+}

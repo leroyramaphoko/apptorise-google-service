@@ -1,0 +1,20 @@
+syntax="proto3";
+
+option java_multiple_files = true;
+option java_package = "com.apptorise.huawei";
+
+message HuaweiTokenRequest {
+  string token = 1;
+}
+
+message HuaweiUser {
+  string fullName = 1;
+  string phoneNumber = 2;
+  string email = 3;
+  string photo = 4;
+  string openId = 5;
+}
+
+service HuaweiService {
+  rpc GetUserByHuaweiToken(HuaweiTokenRequest) returns (HuaweiUser) {};
+}
