@@ -11,7 +11,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>8</java.version>
 		<protobuf.version>3.17.3</protobuf.version>
 		<protobuf-plugin.version>0.6.1</protobuf-plugin.version>
 		<grpc.version>1.42.1</grpc.version>
