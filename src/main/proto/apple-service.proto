@@ -16,5 +16,5 @@ message AppleUser {
 }
 
 service AppleService {
-  rpc GetUserByHuaweiToken(AppleTokenRequest) returns (AppleUser) {};
+  rpc GetUserByAppleToken(AppleTokenRequest) returns (AppleUser) {};
 }
